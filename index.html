@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Gradle-appengine-templates by robinaz</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/robinaz/gradle-appengine-templates">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Gradle-appengine-templates</h1>
+            <h2>Freemarker based templates that build with the gradle-appengine-plugin </h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/robinaz/gradle-appengine-templates/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/robinaz/gradle-appengine-templates/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="app-engine-backend-templates-in-android-studio" class="anchor" href="#app-engine-backend-templates-in-android-studio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>App Engine backend templates in Android Studio</h1>
+
+<p>You can use <a href="https://developers.google.com/appengine">Google App Engine</a> backend templates hosted in this repository to add a backend to your existing (or new) Android application from <a href="http://developer.android.com/sdk/installing/studio.html">Android Studio IDE</a>.</p>
+
+<p>All of these backends are designed to be hosted on App Engine (which provides autoscaling and high-availability out-of-the-box), and can be used under App Engine's <a href="https://developers.google.com/appengine/docs/quotas">free resource quotas</a>.</p>
+
+<h1>
+<a id="1-usage" class="anchor" href="#1-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Usage</h1>
+
+<p>This repository contains three backend template types, which can be added into your Android app by navigating to "File → New Module..." menu, or by right-clicking on your project and choosing "New → Module".</p>
+
+<p><img src="/doc/img/add-app-engine-backend-menu-scaled.png" alt="Tools &amp;rarr; Google Cloud Tools &amp;rarr; Add App Engine Backend"></p>
+
+<p>In the "New Module" wizard that appears, choose "Google Cloud Module":</p>
+
+<p><img src="/doc/img/choose_module.png" alt="Add App Engine Backend Choose Module"></p>
+
+<p>Then choose one out of the following template types:</p>
+
+<p><img src="/doc/img/all.png" alt="Add App Engine Backend Choose Template"></p>
+
+<ol>
+<li>
+<a href="/HelloWorld">App Engine Java Servlet Module</a> [<a href="/HelloWorld">HelloWorld</a>]: a simple App Engine Java backend servlet with minimal boilerplate code,</li>
+<li>
+<a href="/HelloEndpoints">App Engine Java Endpoints Module</a> [<a href="/HelloEndpoints">HelloEndpoints</a>]: a backend which leverages <a href="https://developers.google.com/appengine/docs/java/endpoints">Google Cloud Endpoints</a> for automated object marshalling/unmarshalling, generation of strongly-typed Java client libraries and so on,</li>
+<li>
+<a href="/GcmEndpoints">App Engine Backend with Google Cloud Messaging</a> [<a href="/GcmEndpoints">GcmEndpoints</a>]: a mobile backend with Google Cloud Endpoints and <a href="http://developer.android.com/google/gcm">Google Cloud Messaging</a> integration, which supports more advanced features like push notifications.</li>
+</ol>
+
+<p>For detailed instructions on how to use each of these templates to add a backend to your Android app see the individual template directories (<a href="/HelloWorld">HelloWorld</a>, <a href="/HelloEndpoints">HelloEndpoints</a> or <a href="/GcmEndpoints">GcmEndpoints</a>).</p>
+
+<h1>
+<a id="2-prerequisites" class="anchor" href="#2-prerequisites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Prerequisites</h1>
+
+<p>App Engine requires Java 7 SDK. You can check which SDK your project is using by navigating to "File → Project Structure...".</p>
+
+<p><img src="/doc/img/jdk-settings.png" alt="JDK settings in File &amp;rarr; Project Structure..."></p>
+
+<p>These templates use <a href="http://freemarker.org">FreeMarker</a> (but it is not required if you are adding these templates via Android Studio).</p>
+
+<h1>
+<a id="3-troubleshooting" class="anchor" href="#3-troubleshooting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Troubleshooting</h1>
+
+<p>If you have any problems adding these backends to your Android applications, contact us on <a href="https://plus.google.com/+AndroidDevelopers">Android Developers G+ community</a> or write us a question on StackOverflow using <a href="http://stackoverflow.com/questions/tagged/google-app-engine">google-app-engine</a> or <a href="http://stackoverflow.com/questions/tagged/google-cloud-endpoints">google-cloud-endpoints</a> tags.</p>
+
+<h2>
+<a id="31-useful-links" class="anchor" href="#31-useful-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.1. Useful links</h2>
+
+<p>Click on the following links to get more information about:</p>
+
+<ul>
+<li>
+<a href="https://developers.google.com/appengine/">Google App Engine</a>,</li>
+<li>
+<a href="https://developers.google.com/appengine/docs/java/endpoints/">Google Cloud Endpoints</a>,</li>
+<li>
+<a href="http://developer.android.com/google/gcm/index.html">Google Cloud Messaging</a>,</li>
+<li>
+<a href="http://developer.android.com/sdk/installing/studio.html">Android Studio</a>.</li>
+</ul>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/robinaz">robinaz</a> can be found on <a href="https://github.com/robinaz/gradle-appengine-templates">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
